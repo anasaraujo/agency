@@ -3,9 +3,9 @@ AddDefaultCharset UTF-8
 </FilesMatch>
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /exchange/app/public
+RewriteBase /app/public
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ./exchange/app/public/index.php [L,QSA]
+RewriteRule ./app/public/index.php [L,QSA]
 </IfModule>
